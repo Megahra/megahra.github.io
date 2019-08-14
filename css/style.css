@@ -5,6 +5,7 @@ body {
     letter-spacing: 1px;
 }
 
+/* Slider CSS */
 #slides {
 	height: 650px;
 }
@@ -39,15 +40,6 @@ body {
 	background-image: url(../img/icons/next.png);
 }
 
-.section {
-	padding: 100px 0;
-	vertical-align: center;
-}
-
-.row {
-	position: relative;
-}
-
 .headlineText {
 	position: absolute;
     width: 100%;
@@ -58,7 +50,7 @@ body {
     margin-top: -70px;
     font-size: large;
     color: white;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 .title {
@@ -71,13 +63,51 @@ body {
 	font-size: 23px;
 }
 
+/* Navbar CSS */
+#navigation {
+	background-color: #fdcb6e;
+	padding: 20px 10px;
+	z-index: 100;
+	width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #333;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	text-transform: uppercase;
+	color: #333;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation{
+	position: fixed;
+	top: 0;
+}
+
+/* Page content CSS */
+.section {
+	padding: 100px 0;
+	vertical-align: center;
+}
+
+.row {
+	position: relative;
+}
+
 .aboutImage {
 	max-width: 100%;
 	justify-content: center;
-}
-
-.aboutText {
-	/* Try to vertically center the text. */
 }
 
 .technicalSkillsSection {
@@ -94,7 +124,6 @@ body {
 .item {
   	flex-grow: 1;
   	padding: 25px 50px;
-  	/*height: 100px;*/
 }
 
 .item img {
@@ -103,23 +132,23 @@ body {
   	padding: 5px;
 }
 
-.softSkillsSection {
-	/* Using flatuicolors palette: https://flatuicolors.com/palette/us */
+/*.softSkillsSection {
 	background-color: #55efc4;
-}
+}*/
 
 .contactButton {
 	color: #333;
+	font-weight: bold;
 	padding: 15px 20px;
 	display: inline-block;
 	margin-top: 20px;
 	border: 2px	solid #e17055;
 	border-radius: 2px;
 	background-color: #e17055;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contactButton:hover {
+.contactButton:hover, .contactButton:active {
 	text-decoration: none;
 	color: #fff;
 	background-color: #fab1a0;
