@@ -14,7 +14,11 @@ body {
 	height: 100%;
 	position: absolute;
 	z-index: 3;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
+}
+
+.slides-navigation {
+	z-index: 6;
 }
 
 .slides-navigation .prev,
@@ -40,6 +44,10 @@ body {
 	vertical-align: center;
 }
 
+.row {
+	position: relative;
+}
+
 .headlineText {
 	position: absolute;
     width: 100%;
@@ -47,13 +55,20 @@ body {
     top: 50%;
     z-index: 5;
     text-align: center;
-    margin-top: -25px;
+    margin-top: -70px;
     font-size: large;
     color: white;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
 }
 
 .title {
 	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 50px;
+}
+
+.subtitle {
+	font-size: 23px;
 }
 
 /*.eyecatcherSection {
@@ -68,9 +83,31 @@ body {
 	justify-content: center;
 }
 
+.aboutText {
+	
+}
+
 .technicalSkillsSection {
 	/* Using flatuicolors palette: https://flatuicolors.com/palette/defo */
 	background-color: #00b894;
+}
+
+.itemsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+  	flex-grow: 1;
+  	padding: 25px 50px;
+  	/*height: 100px;*/
+}
+
+.item img {
+	opacity: 0.85;
+  	filter: alpha(opacity=50); /* For IE8 and earlier */
+  	padding: 5px;
 }
 
 .softSkillsSection {
